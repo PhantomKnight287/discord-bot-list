@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/static/images/logo.png"
+    />
+    <link rel="stylesheet" href="/static/build.css" />
+    {% block title %}{% endblock title %}
+  </head>
+  <body>
+    <nav
+      class="navbar flex flex-row bg-gradient-to-r from-purple-500 to-pink-500 text-center p-3"
+    >
+      <div class="logoContainer">
+        <img
+          src="/static/images/logo.png"
+          alt="main logo"
+          class="rounded-full"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="ml-auto flex flex-row gap-8 items-center justify-center">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    {% block body %}{% endblock body %}
+  </body>
+</html>
