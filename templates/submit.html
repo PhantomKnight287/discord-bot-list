@@ -5,40 +5,98 @@
 
 <form action="/submit" method="post">
   {% csrf_token %}
-  <div class="formContainer">
-    <div class="flex flex-col items-center justify-center my-4">
-      <h3 class="heading text-3xl">Submit Your Bot</h3>
+  <div
+    class="formContainer w-full flex-row justify-betwee bg-[#1b2f5c] h-fit flex-wrap"
+  >
+    <div class="lg:w-[40%] md:w-screen my-4">
+      <img
+        src="/static/images/bot.png"
+        class="lg:w-full md:w-2/5 mx-auto"
+        alt="Bot"
+      />
+    </div>
+    <div
+      class="flex items-center justify-center my-4 lg:w-[60%] md:w-full flex-wrap"
+    >
+      <h3 class="heading text-3xl my-3">Submit Your Bot</h3>
       <div class="container">
-        <label for="bot_name">Enter Your Bot's Username with Tag</label>
-        <input type="text" name="bot_name" required />
+        <label for="bot_name" class="lg:w-2/5 md:w-3/5"
+          >Enter Your Bot's Username with Tag</label
+        >
+        <input
+          type="text"
+          name="bot_name"
+          required
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="owner_name">Enter Your Username with Tag</label>
-        <input type="text" name="owner_name" required />
+        <label for="owner_name" class="lg:w-2/5 md:w-3/5"
+          >Enter Your Username with Tag</label
+        >
+        <input
+          type="text"
+          name="owner_name"
+          required
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="bot_id">Enter Your Bot's Id</label>
-        <input type="text" name="bot_id" required />
+        <label for="bot_id" class="lg:w-2/5 md:w-3/5"
+          >Enter Your Bot's Id</label
+        >
+        <input
+          type="text"
+          name="bot_id"
+          required
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="language_used">The Language Used To Make The Bot</label>
-        <input type="text" name="language_used" required />
+        <label for="language_used" class="lg:w-2/5 md:w-3/5"
+          >The Language Used To Make The Bot</label
+        >
+        <input
+          type="text"
+          name="language_used"
+          required
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="invite_link">Enter Your Bot's Invite Link</label>
-        <input type="url" name="invite_link" required />
+        <label for="invite_link" class="lg:w-2/5 md:w-3/5"
+          >Enter Your Bot's Invite Link</label
+        >
+        <input
+          type="url"
+          name="invite_link"
+          required
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="site">Enter Your Bot's Site</label>
-        <input type="url" name="site" />
+        <label for="site" class="lg:w-2/5 md:w-3/5"
+          >Enter Your Bot's Site</label
+        >
+        <input
+          type="url"
+          name="site"
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        />
       </div>
       <div class="container">
-        <label for="description">Describe Your Bot</label>
-        <textarea name="description" cols="30" required rows="10"></textarea>
+        <label for="description" class="w-2/5">Describe Your Bot</label>
+        <textarea
+          name="description"
+          cols="22"
+          required
+          rows="5"
+          class="bg-[#1b2f5c] text-white outline-none border border-white mx-10 rounded-md"
+        ></textarea>
       </div>
       <button
         type="submit"
-        class="bg-gradient-to-r from-sky-500 to-indigo-500 p-4 rounded-lg"
+        class="bg-gradient-to-r from-sky-500 to-indigo-500 p-4 rounded-xl w-1/4 my-2"
       >
         Submit
       </button>
