@@ -3,7 +3,7 @@
 
 {% endblock title %} {% block body %}
 
-<form action="/submit" method="post">
+<form action="/api/bot/submit" method="post">
   {% csrf_token %}
   <div
     class="formContainer w-full flex-row justify-betwee bg-[#1b2f5c] h-fit flex-wrap"
@@ -103,5 +103,7 @@
     </div>
   </div>
 </form>
-
+<script>
+  document.forms[0].reset();
+</script>
 {% endblock body %}
