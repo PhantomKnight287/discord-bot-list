@@ -6,5 +6,6 @@ admin.site.index_title = "Discord Bot List Admin"
 admin.site.site_header = "Discord Bot List Admin"
 urlpatterns = [
     path('', views.index, name='home'),
-    path('submit', views.submitBot, name="submit")
+    path('submit', views.submitPage, name="submit"),
+    path('api/bot/submit', views.submitBot, name="Submit Bot Api")
 ]
